@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="120vp"
+    ohos:width="120vp"
+    ohos:orientation="vertical">
+
+    <Image
+        ohos:margin="10vp"
+        ohos:id="$+id:icon"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:scale_mode="stretch"/>
+    <Checkbox
+        ohos:margin="10vp"
+        ohos:id="$+id:checked"
+        ohos:height="30vp"
+        ohos:width="30vp"
+        ohos:align_parent_end="true"
+        ohos:align_parent_top="true"
+        ohos:text_color_on="#00BFFF"
+        ohos:text_color_off="#808080"/>
+
+</DependentLayout>

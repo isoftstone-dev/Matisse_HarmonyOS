@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    >
+<DirectionalLayout
+
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:padding="15fp"
+    ohos:orientation="vertical"
+    ohos:weight="0.4">
+    <Button
+        ohos:id="$+id:button_sample"
+        ohos:width="150vp"
+        ohos:background_element="$graphic:color_blue_element"
+        ohos:height="30fp"
+        ohos:text_size="27fp"
+        ohos:text="Zhihu"
+        ohos:top_margin="15vp"
+        ohos:bottom_margin="15vp"
+        ohos:right_padding="8vp"
+        ohos:left_padding="8vp"
+        ohos:layout_alignment="horizontal_center"
+        />
+
+    <Button
+        ohos:height="30fp"
+        ohos:width="150vp"
+        ohos:background_element="$graphic:color_blue_element"
+        ohos:text_size="27fp"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="OnlyGif"/>
+
+    <Text
+        ohos:top_margin="30vp"
+        ohos:id="$+id:text_helloworld"
+        ohos:height="30vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:color_blue_element"
+        ohos:layout_alignment="left"
+        ohos:text="Matisse"
+        ohos:text_size="50"/>
+</DirectionalLayout>
+  <ListContainer
+      ohos:top_margin="30vp"
+      ohos:height="match_content"
+      ohos:width="match_parent"
+      ohos:text_size="27fp"
+      ohos:weight="0.6"/>
+
+</DependentLayout>

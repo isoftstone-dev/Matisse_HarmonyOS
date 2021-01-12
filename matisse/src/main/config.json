@@ -1,0 +1,85 @@
+{
+  "app": {
+    "bundleName": "com.example.first_application",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.matisse",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "matisse",
+      "moduleType": "feature"
+    },
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.READ_USER_STORAGE",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.matisse.MatisseAbility",
+            "com.example.matisse.slice.MatisseAbilitySlice"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.READ_MEDIA",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.matisse.MatisseAbility",
+            "com.example.matisse.slice.MatisseAbilitySlice"
+          ],
+          "when": "always"
+        }
+      }
+    ],
+    "abilities": [
+      {
+        "skills": [
+          {
+            "actions": [
+              "action.system.home",
+              "action.prev",
+              "ACTION_PICK_PIC",
+              "action.pick_pic"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.example.matisse.MatisseAbility",
+        "icon": "$media:icon",
+        "description": "$string:matisseability_description",
+        "label": "Matisse",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "visible": true,
+        "permissions": [
+          "com.example.matisse.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.matisse.DataAbility",
+        "icon": "$media:icon",
+        "description": "$string:dataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.matisse.DataAbility"
+      }
+    ]
+  }
+}
